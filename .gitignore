@@ -1,0 +1,32 @@
+# Compiled class files
+target/
+*.class
+
+# IDE metadata
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+*.swp
+*.swo
+*~
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# Allure reports (generated)
+allure-results/
+allure-report/
+
+# Log files
+*.log
+
+# Screenshot artifacts (generated during test failures)
+screenshots/
