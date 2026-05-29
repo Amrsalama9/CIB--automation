@@ -1,0 +1,11 @@
+{
+  "image": "ubuntu:22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17",
+      "installMaven": "true"
+    }
+  },
+  "postCreateCommand": "apt-get update && apt-get install -y chromium-browser || apt-get install -y chromium",
+  "remoteUser": "root"
+}
