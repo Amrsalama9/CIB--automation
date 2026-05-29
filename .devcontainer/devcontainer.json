@@ -1,5 +1,11 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/java:17-bookworm",
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y chromium && mvn dependency:resolve -q",
-  "remoteUser": "vscode"
+  "image": "ubuntu:22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17",
+      "installMaven": "true"
+    }
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y chromium-browser || sudo apt-get install -y chromium",
+  "remoteUser": "root"
 }
