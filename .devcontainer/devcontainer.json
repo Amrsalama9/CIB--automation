@@ -1,5 +1,5 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/java:11-bullseye",
+  "image": "mcr.microsoft.com/devcontainers/java:17-bookworm",
   "postCreateCommand": "sudo apt-get update && sudo apt-get install -y chromium && mvn dependency:resolve -q",
   "remoteUser": "vscode"
 }
