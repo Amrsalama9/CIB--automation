@@ -1,0 +1,5 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/java:11-bullseye",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y chromium && mvn dependency:resolve -q",
+  "remoteUser": "vscode"
+}
